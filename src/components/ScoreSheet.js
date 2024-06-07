@@ -1,4 +1,5 @@
 import React, { useEffect, useState} from 'react';
+import './ScoreSheet.css';
 
 const phaseNames = [
     "2 sets 3",
@@ -43,7 +44,7 @@ function ScoreSheet({ players, scores, onScoreChange, onNewGame, onQuitGame }) {
     };
 
     const renderScoreInput = (playerIndex, roundIndex) => (
-        <input
+        <input className='score-input'
             type="number"
             value={scores[playerIndex][roundIndex] || ''}
             onChange={(e) => handleChange(playerIndex, roundIndex, e)}
@@ -51,9 +52,9 @@ function ScoreSheet({ players, scores, onScoreChange, onNewGame, onQuitGame }) {
     );
 
     return (
-        <div>
+        <div className='score-sheet-container'>
             <h2>Score Sheet</h2>
-            <table>
+            <table className='score-sheet-table'>
                 <thead>
                     <tr>
                         <th>Phase</th>
@@ -75,23 +76,23 @@ function ScoreSheet({ players, scores, onScoreChange, onNewGame, onQuitGame }) {
                         <td>First Finisher</td>
                         {players.map((_, playerIndex) => (
                             <td key={playerIndex}>
-                                <button onClick={() => handleFirstFinisherClick(playerIndex)}>
+                                <button className={`finisher-button ${firstFinisher === playerIndex ? 'selected' : ''}`} onClick={() => handleFirstFinisherClick(playerIndex)}>
                                     {firstFinisher === playerIndex ? "✔" : "Select"}
                                 </button>
                             </td>
                         ))}
                     </tr>
                     <tr>
-                        <td>Total</td>
+                        <td className='total-score'>Total</td>
                         {players.map((_, playerIndex) => {
                             const totalScore = finalScores[playerIndex].reduce((acc, score) => acc + (score || 0), 0);
-                            return <td key={playerIndex}>{totalScore}</td>;
+                            return <td className='total-score' key={playerIndex}>{totalScore}</td>;
                         })}
                     </tr>
                 </tbody>
             </table>
-            <button onClick={onNewGame}>New Game</button>
-            <button onClick={onQuitGame}>Quit Game</button>
+            <button className='button' onClick={onNewGame}>New Game</button>
+            <button className='button' onClick={onQuitGame}>Quit Game</button>
         </div>
     );
 }

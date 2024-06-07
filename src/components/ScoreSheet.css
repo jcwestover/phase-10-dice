@@ -1,0 +1,73 @@
+/* ScoreSheet.css */
+
+/* Container styles */
+.score-sheet-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Table styles */
+  .score-sheet-table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .score-sheet-table th,
+  .score-sheet-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .score-sheet-table th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Input styles */
+  .score-input {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  /* First finisher button styles */
+  .finisher-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .finisher-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .finisher-button.selected {
+    background-color: #dc3545;
+  }
+  
+  /* Total scores styles */
+  .total-score {
+    font-weight: bold;
+  }
+  
+  /* Button styles */
+  .button {
+    margin-top: 10px;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .button:hover {
+    background-color: #218838;
+  }
+  
