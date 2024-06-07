@@ -45,7 +45,7 @@ function ScoreSheet({ players, scores, onScoreChange, onNewGame, onQuitGame }) {
 
     const renderScoreInput = (playerIndex, roundIndex) => (
         <input className='score-input'
-            type="number"
+            type="text"
             value={scores[playerIndex][roundIndex] || ''}
             onChange={(e) => handleChange(playerIndex, roundIndex, e)}
         />
@@ -53,7 +53,6 @@ function ScoreSheet({ players, scores, onScoreChange, onNewGame, onQuitGame }) {
 
     return (
         <div className='score-sheet-container'>
-            <h2>Score Sheet</h2>
             <table className='score-sheet-table'>
                 <thead>
                     <tr>
