@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+## Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Project Title**: Phase 10: Dice Score Sheet
 
-## Available Scripts
+**Project Description**: Score Sheet for Phase 10: Dice game
 
-In the project directory, you can run:
+**Project Goals**: Tracks scores of multiple users
 
-### `npm start`
+## Instructions for Build and Use
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Steps to build and/or run the software:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. If running from IDE use npm start, else visit the github pages
 
-### `npm test`
+Instructions for using the software:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. After entering the app add names of up to 5 players
+2. Click the submit button
+3. Begin playing Phase 10 Dice and as the game progresses input the player's score in the corresponding box
+4. Once a player has finished all phases, click the finished first box in the corresponding player's column
+5. If you would like to start another game with the same players, you may click the new game button. This will reset the scores but keep the player names in memory.Else pressing the quit game button will take you back to the player entry form (the entry point of the app)
 
-### `npm run build`
+## Development Environment 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To recreate the development environment, you need the following software and/or libraries with the specified versions:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* React 18.3.1, JavaScript 20.14.0, HTML5, CSS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Useful Websites to Learn More
 
-### `npm run eject`
+I found these websites useful in developing this software:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* [W3Schools](https://www.w3schools.com/react/react_intro.asp)
+* [Codecadamy Learn React](https://www.codecademy.com/enrolled/courses/react-101)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Future Work
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The following items I plan to fix, improve, and/or add to this project in the future:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* [ ] Improve styling
+* [ ] Add more games (Five Crowns and Skull King)
